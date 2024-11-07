@@ -31,7 +31,7 @@ public class App {
         jose.setFather(josefo);
         jose.setMother(josefina);
 
-        System.out.println(carlos.getFather().getFather().getName());
+        System.out.println(joao.getFather().getFather() + " is " + joao + "'s grandfather.");
 
     }
 
