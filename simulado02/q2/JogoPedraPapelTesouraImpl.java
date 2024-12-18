@@ -10,7 +10,7 @@ public class JogoPedraPapelTesouraImpl implements JogoPedraPapelTesoura {
     public Jogada geraJogada() {
 
         Random r = new Random();
-        int i = r.nextInt(2);
+        int i = r.nextInt(3);
         if(i == 0) {
             return Jogada.PEDRA;
         }
