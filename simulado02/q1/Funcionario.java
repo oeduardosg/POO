@@ -27,6 +27,7 @@ public class Funcionario {
     public void setSetor(Setor setor) {
         if(this.setor == null) {
             this.setor = setor;
+            this.setor.trocaDeSetor(this);
         }
         else {
             this.setor = null;

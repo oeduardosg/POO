@@ -19,6 +19,10 @@ public class Setor implements UnidadeOrganizacional {
         f.setSetor(this);
     }
 
+    public void trocaDeSetor(Funcionario f) {
+        funcionarios.remove(f);
+    }
+
     public double getSalarioMedio() {
         double salarioMedio = 0;
         for(Funcionario f: funcionarios) {
