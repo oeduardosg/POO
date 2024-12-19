@@ -17,4 +17,21 @@ public class Curso {
         return d;
     }
 
+    public String getNome() {
+        return nomeCurso;
+    }
+
+    public void estabelecePreReq(Disciplina d, String id) {
+        d.addPreRequisito(id);   
+    }
+
+    @Override
+    public String toString() {
+        String s = "Curso: " + this.nomeCurso + "\nDisciplinas: \n";
+        for(Disciplina d: disciplinas) {
+            s += d;
+        }
+        return s;
+    }
+
 }
